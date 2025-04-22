@@ -14,7 +14,7 @@
     <div class="stars">
     </div>
     <div class="content search-page">
-      <input type="text" id="search-bar" placeholder="Search with DuckDuckGo, or enter URL...">
+      <input type="text" id="search-bar" placeholder="Search with Google, or enter URL...">
       <div class="search-directory">
         <div class="search-tile" data-url="https://duckduckgo.com">
           <img src="assets/duckduckgo.png" alt="DuckDuckGo">
@@ -105,7 +105,7 @@
         if (document.activeElement === searchBar && event.key === 'Enter') {
           const query = searchBar.value.trim();
           if (query) {
-            const url = search(query, 'https://duckduckgo.com/?q=%s');
+            const url = search(query, 'https://www.google.com/search?q=%s');
             window.location.href = `web.html#${url}`;
           }
         }

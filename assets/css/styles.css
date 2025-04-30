@@ -18,19 +18,84 @@
     position: relative;
 } */
 
-/* Styles for the glowing blob - added this block */
 .blob {
-    box-shadow: 0 0 150px 100px rgba(68, 0, 255, 0.8); /* Creates a purple glow around the blob */
-    border-radius: 50%; /* Makes the blob circular */
-    height: 400px; /* Height of the blob */
-    width: 400px; /* Width of the blob */
-    background-image: radial-gradient(circle, rgba(242, 0, 255, 0.9), rgba(68, 0, 255, 0.7)); /* Gradient for glowing effect */
-    filter: blur(50px); /* Blurs the edges for a softer glow */
-    position: absolute; /* Positioned independently within the container */
-    left: 50%; /* Centers the blob horizontally */
-    bottom: 10%; /* Places the blob near the bottom */
-    transform: translate(-50%, -50%); /* Ensures perfect centering */
+	box-shadow: 0 0 150px 100px var(--link-hover-color);
+	border-radius: 50%;
+	height: 290px;
+	width: 290px;
+	background-image: radial-gradient(
+		farthest-corner at 50% 50%,
+		#ffffff,
+		var(--dshadow3)
+	);
+	background-blend-mode: multiply;
+	filter: blur(50px) contrast(1.1);
+	position: fixed;
+	transform: translate(-50%, -50%);
+	left: 47vw;
+	top: 100vh;
+	position: absolute;
 }
+
+.blobbig {
+	box-shadow: 0 0 150px 100px var(--link-hover-color);
+	border-radius: 100%;
+	height: 45vh;
+	width: 75vw;
+	opacity: 0.15;
+	background-image: radial-gradient(
+		farthest-corner at 50% 50%,
+		#ffffff,
+		var(--dshadow4)
+	);
+	background-blend-mode: multiply;
+	filter: blur(50px) contrast(1.1);
+	position: fixed;
+	transform: translate(-50%, -35%);
+	left: 47vw;
+	top: 100vh;
+	position: absolute;
+}
+
+.blobsmall {
+	box-shadow: 0 0 150px 50px var(--dshadow4);
+	border-radius: 50%;
+	height: 50px;
+	width: 340px;
+	background-image: radial-gradient(
+		farthest-corner at 50% 50%,
+		#ffffff,
+		var(--dshadow3)
+	);
+	background-blend-mode: multiply;
+	filter: blur(50px) contrast(1.2);
+	position: fixed;
+	transform: translate(-50%, -50%);
+	left: 60vw;
+	top: 100vh;
+	position: absolute;
+}
+
+.blobtop {
+	box-shadow: 0 0 1px 20px var(--dshadow4);
+	border-radius: 50%;
+	height: 230px;
+	width: 20px;
+	background-image: radial-gradient(
+		farthest-corner at 50% 50%,
+		#ffffff,
+		var(--dshadow3)
+	);
+	background-blend-mode: multiply;
+	filter: blur(50px) contrast(1.1);
+	position: fixed;
+	transform: translate(-50%, -50%);
+	rotate: -20deg;
+	left: 41.6vw;
+	top: calc(89vh - 200px);
+	position: absolute;
+}
+
 
 body {
     margin: 0;

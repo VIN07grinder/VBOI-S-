@@ -447,3 +447,11 @@ body {
     z-index: -1;
     overflow: hidden;
 }
+
+.blob, .blobbig, .blobsmall, .blobtop {
+    background-color: red !important; /* Make the blobs clearly visible */
+    height: 100px; /* Use small test sizes */
+    width: 100px;
+    z-index: 999 !important; /* Bring them to the front */
+    position: relative; /* Ensure proper positioning */
+}

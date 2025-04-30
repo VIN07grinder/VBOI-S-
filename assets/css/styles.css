@@ -18,6 +18,13 @@
     position: relative;
 } */
 
+.root {
+	--dshadow1: #ae00ff;
+	--dshadow2: #4400ff;
+	--dshadow3: #ff00d4;
+	--dshadow4: #8400ff;
+}
+
 .blob {
 	box-shadow: 0 0 150px 100px var(--link-hover-color);
 	border-radius: 50%;

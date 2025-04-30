@@ -38,17 +38,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(
-        ellipse at bottom,
-        rgba(68, 0, 255, 1), /* Deep purple */
-        rgba(242, 0, 255, 0.7), /* Magenta */
-        rgba(0, 0, 0, 1) /* Black */
-    );
+    background-color: black; /* Set to black to let the blob stand out */
+    color: white;
+    font-family: 'DM Sans', sans-serif;
     overflow: hidden;
     position: relative;
-    font-family: 'DM Sans', sans-serif;
 }
-
 
 .material-symbols-outlined {
   font-variation-settings:

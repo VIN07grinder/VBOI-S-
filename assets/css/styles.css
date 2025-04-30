@@ -42,7 +42,7 @@
 	transform: translate(-50%, -50%);
 	left: 47vw;
 	top: 100vh;
-	position: absolute;
+	position: fixed;
 }
 
 .blobbig {
@@ -62,7 +62,7 @@
 	transform: translate(-50%, -35%);
 	left: 47vw;
 	top: 100vh;
-	position: absolute;
+	position: fixed;
 }
 
 .blobsmall {
@@ -81,7 +81,7 @@
 	transform: translate(-50%, -50%);
 	left: 60vw;
 	top: 100vh;
-	position: absolute;
+	position: fixed;
 }
 
 .blobtop {
@@ -101,7 +101,7 @@
 	rotate: -20deg;
 	left: 41.6vw;
 	top: calc(89vh - 200px);
-	position: absolute;
+	position: fixed;
 }
 
 

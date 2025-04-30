@@ -26,9 +26,9 @@ body {
     align-items: center;
     background: radial-gradient(
         ellipse at bottom,
-        var(--dshadow2) 0%,
-        var(--dshadow3) 60%,
-        var(--background-color) 100%
+        rgba(68, 0, 255, 1), /* Deep purple */
+        rgba(242, 0, 255, 0.7), /* Magenta */
+        rgba(0, 0, 0, 1) /* Black */
     );
     overflow: hidden;
     position: relative;

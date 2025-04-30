@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    background: radial-gradient(circle 1500px at bottom, #38bcf4, #000);
+    background: radial-gradient(circle 692px at bottom, #38bcf4, #000);
     color: white;
     font-family: Arial, sans-serif;
     overflow: hidden;

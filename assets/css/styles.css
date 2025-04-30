@@ -18,6 +18,20 @@
     position: relative;
 } */
 
+/* Styles for the glowing blob - added this block */
+.blob {
+    box-shadow: 0 0 150px 100px rgba(68, 0, 255, 0.8); /* Creates a purple glow around the blob */
+    border-radius: 50%; /* Makes the blob circular */
+    height: 400px; /* Height of the blob */
+    width: 400px; /* Width of the blob */
+    background-image: radial-gradient(circle, rgba(242, 0, 255, 0.9), rgba(68, 0, 255, 0.7)); /* Gradient for glowing effect */
+    filter: blur(50px); /* Blurs the edges for a softer glow */
+    position: absolute; /* Positioned independently within the container */
+    left: 50%; /* Centers the blob horizontally */
+    bottom: 10%; /* Places the blob near the bottom */
+    transform: translate(-50%, -50%); /* Ensures perfect centering */
+}
+
 body {
     margin: 0;
     height: 100vh;

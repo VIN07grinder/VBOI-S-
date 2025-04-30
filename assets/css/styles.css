@@ -24,9 +24,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(ellipse at bottom, rgba(68, 0, 255, 1), rgba(204, 0, 245, 0.7), rgba(0, 0, 0, 1));
+    background: radial-gradient(
+        ellipse at bottom,
+        var(--dshadow2) 0%,
+        var(--dshadow3) 60%,
+        var(--background-color) 100%
+    );
     overflow: hidden;
     position: relative;
+    font-family: 'DM Sans', sans-serif;
 }
 
 

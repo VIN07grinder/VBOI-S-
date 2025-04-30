@@ -18,7 +18,8 @@
     position: relative;
 } */
 
-.root {
+root {
+	--link-hover-color: #7d2ae8;
 	--dshadow1: #ae00ff;
 	--dshadow2: #4400ff;
 	--dshadow3: #ff00d4;

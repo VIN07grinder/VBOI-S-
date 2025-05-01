@@ -237,13 +237,11 @@
                 this.txt = fullTxt.substring(0, this.txt.length + 1);
             }
 
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+            // Add a blinking cursor dynamically
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '<span class="cursor">|</span></span>';
 
             let delta = 200 - Math.random() * 100;
-
-            if (this.isDeleting) {
-                delta /= 2;
-            }
+            if (this.isDeleting) delta /= 2;
 
             if (!this.isDeleting && this.txt === fullTxt) {
                 delta = this.period;
@@ -254,8 +252,7 @@
                 delta = 500;
             }
 
-	    console.log("Current text: ", this.txt);
-
+            console.log("Current text: ", this.txt);
             setTimeout(() => this.tick(), delta);
         }
     }

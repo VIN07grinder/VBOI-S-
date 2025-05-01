@@ -171,8 +171,10 @@ body {
 }
 
 .content h1 span {
-    color: silver;
-    text-shadow: 0 0 20px silver, 0 0 40px silver, 0 0 60px silver;
+  color: rgb(140, 0, 255); /* Updated color */
+  text-shadow: 0 0 20px rgb(140, 0, 255), 
+             0 0 40px rgb(140, 0, 255), 
+             0 0 60px rgb(140, 0, 255);
 }
 
 .content p {

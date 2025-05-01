@@ -24,6 +24,12 @@
 	--dshadow2: #4400ff;
 	--dshadow3: #ff00d4;
 	--dshadow4: #8400ff;
+	--button-background-color: #4400ff;
+	--button-gradient-color: linear-gradient(
+		304deg,
+		rgb(204, 0, 245) 0%,
+		#4400ff 100%
+	);
 }
 
 .blob {
@@ -184,18 +190,19 @@ body {
 }
 
 .content a {
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 17px;
-    background: grey;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 0 20px silver, 0 0 40px silver, 0 0 60px silver;
-    position: relative;
-    border: 2px solid silver;
-    box-shadow: 0 0 10px silver;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 35px;
+	border: none;
+	color: var(--text-color);
+	cursor: pointer;
+	background: var(--button-background-color);
+	background: var(--button-gradient-color);
+	transition: all 0.2s ease;
+	box-shadow:
+		14px 7px 30px -5px var(--dshadow1),
+		-15px -2px 30px -5px var(--dshadow2);
 }
 
 .content a:hover {

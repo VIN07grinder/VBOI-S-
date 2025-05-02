@@ -186,6 +186,7 @@ body {
 }
 
 .content p {
+	margin: 10px 0 20px;
     	font-size: 20px;
 	color: var(--text-color);
 	font-weight: 200;

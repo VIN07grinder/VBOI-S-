@@ -190,27 +190,205 @@ body {
 }
 
 .content a {
-	text-decoration: none;
-	font-size: 1rem;
-	font-weight: bold;
-	position: relative;
-	padding: 10px 20px;
-	border-radius: 35px;
-	border: none;
-	color: var(--text-color);
-	cursor: pointer;
-	background: var(--button-background-color);
-	background: var(--button-gradient-color);
-	transition: all 0.2s ease;
-	box-shadow:
-		14px 7px 30px -5px var(--dshadow1),
-		-15px -2px 30px -5px var(--dshadow2);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    background: var(--button-background-color);
+    background: var(--button-gradient-color);
+    transition: all 0.2s ease;
+    box-shadow:
+        14px 7px 30px -5px var(--dshadow1),
+        -15px -2px 30px -5px var(--dshadow2);
 }
 
+/* Hover effect: Enlarges button and activates particles */
 .content a:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Button enlarges */
+    padding-left: 20px;
+    padding-right: 20px;
     box-shadow: 0 0 20px silver;
     opacity: 0.9;
+}
+
+/* Particle spawning effect */
+.content a:before,
+.content a:after {
+    position: absolute;
+    content: '';
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+}
+
+/* Top particle animation */
+.content a:hover:before {
+    top: -70%;
+    background-image: radial-gradient(
+        circle,
+        var(--link-hover-color) 20%,
+        transparent 20%
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        var(--link-hover-color) 20%,
+        transparent 30%
+    ),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(
+        circle,
+        transparent 10%,
+        var(--link-hover-color) 15%,
+        transparent 20%
+    ),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%);
+    background-size:
+        10% 10%,
+        20% 20%,
+        15% 15%,
+        20% 20%,
+        18% 18%,
+        10% 10%,
+        15% 15%,
+        10% 10%,
+        18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+}
+
+/* Bottom particle animation */
+.content a:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(
+        circle,
+        var(--link-hover-color) 20%,
+        transparent 20%
+    ),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(
+        circle,
+        transparent 10%,
+        var(--link-hover-color) 15%,
+        transparent 20%
+    ),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%);
+    background-size:
+        15% 15%,
+        20% 20%,
+        18% 18%,
+        20% 20%,
+        15% 15%,
+        20% 20%,
+        18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+}
+
+/* Particle movement animation */
+@keyframes greentopBubbles {
+	0% {
+		background-position:
+			5% 90%,
+			10% 90%,
+			10% 90%,
+			15% 90%,
+			25% 90%,
+			25% 90%,
+			40% 90%,
+			55% 90%,
+			70% 90%;
+	}
+
+	50% {
+		background-position:
+			0% 80%,
+			0% 20%,
+			10% 40%,
+			20% 0%,
+			30% 30%,
+			22% 50%,
+			50% 50%,
+			65% 20%,
+			90% 30%;
+	}
+
+	100% {
+		background-position:
+			0% 70%,
+			0% 10%,
+			10% 30%,
+			20% -10%,
+			30% 20%,
+			22% 40%,
+			50% 40%,
+			65% 10%,
+			90% 20%;
+		background-size:
+			0% 0%,
+			0% 0%,
+			0% 0%,
+			0% 0%,
+			0% 0%,
+			0% 0%;
+	}
+}
+
+@keyframes greenbottomBubbles {
+	0% {
+		background-position:
+			10% -10%,
+			30% 10%,
+			55% -10%,
+			70% -10%,
+			85% -10%,
+			70% -10%,
+			70% 0%;
+	}
+
+	50% {
+		background-position:
+			0% 80%,
+			20% 80%,
+			45% 60%,
+			60% 100%,
+			75% 70%,
+			95% 60%,
+			105% 0%;
+	}
+
+	100% {
+		background-position:
+			0% 90%,
+			20% 90%,
+			45% 70%,
+			60% 110%,
+			75% 80%,
+			95% 70%,
+			110% 10%;
+		background-size:
+			0% 0%,
+			0% 0%,
+			0% 0%,
+			0% 0%,
+			0% 0%,
+			0% 0%;
+	}
 }
 
 #search-bar {

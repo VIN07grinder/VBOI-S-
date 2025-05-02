@@ -213,7 +213,6 @@ body {
     transform: scale(1.2); /* Button enlarges */
     padding-left: 20px;
     padding-right: 20px;
-    box-shadow: 0 0 20px silver;
     opacity: 0.9;
 }
 

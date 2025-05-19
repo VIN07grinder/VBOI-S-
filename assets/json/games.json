@@ -784,5 +784,15 @@
     "link": "embed.html#https://retro-bowl.gg/",
     "imgSrc": "https://th.bing.com/th/id/OIP.JMBjajtstz79zh8exdobmAHaEK?rs=1&pid=ImgDetMain",
     "title": "Retro Bowl"
+  },
+  {
+    "link": "embed.html#https://www.crazygames.com/game/snow-rider-3d",
+    "imgSrc": "https://blobopera.io/data/image/game/snow-rider-3d.PNG",
+    "title": "Snow Rider 3D"
+  },
+  {
+    "link": "embed.html#https://www.crazygames.com/game/ragdoll-archers",
+    "imgSrc": "https://images.crazygames.com/ragdoll-archers_16x9/20231226104156/ragdoll-archers_16x9-cover?auto=format%2Ccompress&q=45&cs=strip&ch=DPR&w=1200&h=630&fit=crop",
+    "title": "Ragdoll Archers"
   }
 ]

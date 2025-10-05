@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Z-Kit Notice</title>
+  <title>Vboi's Games Launcher</title>
   <link rel="shortcut icon" href="https://google.com/favicon.ico" type="image/x-icon">
 
   <meta property="benrogo:index" content="index">
   <meta property="benrogo:uvpath" content="/z/kit/uv.config.js">
 
-  <meta content="Z-Kit" property="og:title"/>
-  <meta content="The only fully u⁠n⁠b⁠l⁠o⁠c⁠k⁠a⁠b⁠l⁠e p⁠r⁠o⁠x⁠y site." property="og:description"/>
-  <meta content="https://zkit.above.gay/assets/logo.png" property="og:image"/>
-  <meta content="#FEFEFF" data-react-helmet="true" name="theme-color"/>
+  <meta content="Vboi's Games" property="og:title">
+  <meta content="The only fully u⁠n⁠b⁠l⁠o⁠c⁠k⁠a⁠b⁠l⁠e p⁠r⁠o⁠x⁠y site." property="og:description">
+  <meta content="https://zkit.above.gay/assets/logo.png" property="og:image">
+  <meta content="#ADD8E6" data-react-helmet="true" name="theme-color">
   
   <style>
     body {
@@ -22,7 +20,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: radial-gradient(circle at bottom, #555, #000);
+      background: radial-gradient(circle 692px at bottom, #38bcf4, #000);
       color: white;
       font-family: Arial, sans-serif;
       overflow: hidden;
@@ -81,18 +79,22 @@
     .content h1 {
       font-size: 3rem;
       margin: 0;
-      color: white;
+      background: white;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .content h1 span {
-      color: silver;
-      text-shadow: 0 0 20px silver, 0 0 40px silver, 0 0 60px silver;
+        background: white;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 20px white, 0 0 40px white, 0 0 60px white;
     }
 
     .divider {
       width: 350px;
       height: 2px;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 1);
       margin: 20px 0;
     }
 
@@ -125,7 +127,7 @@
     }
 
     #generate-button {
-      background: grey;
+      background: linear-gradient(90deg,rgba(157, 224, 252, 1) 0%, rgba(125, 216, 255, 1) 50%, rgba(0, 183, 255, 1) 100%);
       color: white;
       font-size: 1rem;
       padding: 10px 20px;
@@ -140,7 +142,7 @@
     }
 
     #generate-button:hover {
-      box-shadow: 0 0 20px silver;
+      box-shadow: 0 0 20px white;
       opacity: 0.9;
     }
 
@@ -152,39 +154,19 @@
       left: 0;
       z-index: -1;
     }
-
-    .content p a {
-      color: silver;
-      text-shadow: 0 0 20px silver, 0 0 40px silver, 0 0 60px silver;
-      text-decoration: underline;
-      font-weight: bold;
-      transition: color 0.2s;
-    }
-
-    .content p a:hover {
-      color: #fff;
-    }
   </style>
 </head>
 
 <body>
-  <div id="particles-js"></div>
+  <div id="particles-js"><canvas class="particles-js-canvas-el" width="1509" height="1971" style="width: 100%; height: 100%;"></canvas></div>
   <div class="background">
     <div class="stars"></div>
     <div class="content">
-      <h1><span>Z-Kit</span> Notice</h1>
+      <h1><span>Vboi's Games</span> Launcher</h1>
       <div class="divider"></div>
 
-      <p style="color: #ccc; font-size: 1.2rem; margin-bottom: 20px;">
-        You are using an <b>outdated link</b>. Please use a new link from the <b>Z-Kit D⁠i⁠s⁠c⁠o⁠r⁠d⁠</b>.
-        <br>
-        Use the button below to launch a view of the D⁠i⁠s⁠c⁠o⁠r⁠d⁠ server for a new link, or join it at <b>.gg/aG5t3ZaENv</b>
-        <br><br>
-        If you cannot access the D⁠i⁠s⁠c⁠o⁠r⁠d⁠ for whatever reason, try <b><a href="https://threehundredmice.bashundharafoundation.org.np/">this link.</a></b>
-      </p>
-
       <label for="title-input">Page Title</label>
-      <input type="text" id="title-input" placeholder="New Tab" value="New Tab" />
+      <input type="text" id="title-input" placeholder="New Tab" value="New Tab">
 
       <label for="pre-saved-options">Page Icon</label>
       <select id="pre-saved-options">
@@ -197,13 +179,30 @@
         <option value="canvas">Canvas</option>
       </select>
 
-      <button id="generate-button"><span>Launch D⁠i⁠s⁠c⁠o⁠r⁠d⁠</span></button>
+      <button id="generate-button"><span>Launch Vboi's Games</span></button>
+      <p style="margin-top: 10px; color: #ccc; font-size: 0.9rem;">
+        Or, <a id="download-launcher" href="#" download="launcher.html" style="color: white; text-decoration: underline;">download the launcher</a>
+      </p>
+      <a href="https://github.com/VIN07grinder/VBOI-S-" target="_blank" style="
+        position: absolute; 
+        bottom: 20px;
+        left: 50%; 
+        transform: translateX(-50%); 
+        width: auto; 
+        height: auto; 
+        max-width: 200px;
+        max-height: 130px;">
+        <img src="https://zkit.above.gay/assets/launchergithub.png" alt="GitHub" style="width: 100%; height: auto;">
+      </a>
     </div>
   </div>
 
   <script>
 
-    const url = "https://e.widgetbot.io/channels/1341303023107837982/1360381163780440094";
+    const url = (window.location.protocol === "https:") ?
+        window.location.href + 'home.html'
+        :
+        "https://zkit.above.gay/home";
       
     document.getElementById('pre-saved-options').addEventListener('change', (e) => {
       const titleInput = document.getElementById('title-input');
@@ -269,22 +268,39 @@
 
       window.location.href = "https://www.google.com/";
     });
+    
+    const launcherBase64 = atob(`PCFkb2N0eXBlaHRtbD48aHRtbCBsYW5nPWVuPjxtZXRhIGNoYXJzZXQ9VVRGLTg+PG1ldGEgY29udGVudD0nd2lkdGg9ZGV2aWNlLXdpZHRoLGluaXRpYWwtc2NhbGU9MSduYW1lPXZpZXdwb3J0Pjx0aXRsZT5WYm9pJ3MgR2FtZXMgTGF1bmNoZXI8L3RpdGxlPjxsaW5rIGhyZWY9aHR0cHM6Ly9nb29nbGUuY29tL2Zhdmljb24uaWNvIHJlbD0nc2hvcnRjdXQgaWNvbid0eXBlPWltYWdlL3gtaWNvbj48c3R5bGU+Ym9keXttYXJnaW46MDtoZWlnaHQ6MTAwdmg7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO2JhY2tncm91bmQ6cmFkaWFsLWdyYWRpZW50KGNpcmNsZSBhdCBib3R0b20sIzU1NSwjMDAwKTtjb2xvcjojZmZmO2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWY7b3ZlcmZsb3c6aGlkZGVuO3Bvc2l0aW9uOnJlbGF0aXZlfS5iYWNrZ3JvdW5ke3Bvc2l0aW9uOmFic29sdXRlO3dpZHRoOjEwMCU7aGVpZ2h0OjEwMCV9LnN0YXJze3Bvc2l0aW9uOmFic29sdXRlO3dpZHRoOjEwMCU7aGVpZ2h0OjEwMCU7YmFja2dyb3VuZDowIDA7b3ZlcmZsb3c6aGlkZGVufS5zdGFye3Bvc2l0aW9uOmFic29sdXRlO3dpZHRoOjJweDtoZWlnaHQ6MnB4O2JhY2tncm91bmQ6I2ZmZjtib3JkZXItcmFkaXVzOjUwJTtvcGFjaXR5OjA7YW5pbWF0aW9uOnR3aW5rbGUgNXMgaW5maW5pdGV9QGtleWZyYW1lcyB0d2lua2xlezAle29wYWNpdHk6MH01MCV7b3BhY2l0eToxfTEwMCV7b3BhY2l0eTowfX0uY29udGVudHt0ZXh0LWFsaWduOmNlbnRlcjtwb3NpdGlvbjpyZWxhdGl2ZTt6LWluZGV4OjE7ZGlzcGxheTpmbGV4O2ZsZXgtZGlyZWN0aW9uOmNvbHVtbjthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlcjtoZWlnaHQ6MTAwJX0uY29udGVudCBoMXtmb250LXNpemU6M3JlbTttYXJnaW46MDtjb2xvcjojZmZmfS5jb250ZW50IGgxIHNwYW57Y29sb3I6c2lsdmVyO3RleHQtc2hhZG93OjAgMCAyMHB4IHNpbHZlciwwIDAgNDBweCBzaWx2ZXIsMCAwIDYwcHggc2lsdmVyfS5kaXZpZGVye3dpZHRoOjM1MHB4O2hlaWdodDoycHg7YmFja2dyb3VuZC1jb2xvcjpyZ2JhKDI1NSwyNTUsMjU1LC41KTttYXJnaW46MjBweCAwfWxhYmVse2Rpc3BsYXk6YmxvY2s7Zm9udC1zaXplOjFyZW07bWFyZ2luLWJvdHRvbTo1cHg7Y29sb3I6I2NjYztmb250LXdlaWdodDo3MDB9aW5wdXQsc2VsZWN0e3dpZHRoOjMwMHB4O3BhZGRpbmc6MTJweDttYXJnaW4tYm90dG9tOjE1cHg7Ym9yZGVyOm5vbmU7Ym9yZGVyLXJhZGl1czoxMnB4O2JvcmRlcjoycHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwuMik7YmFja2dyb3VuZC1jb2xvcjojMzMzO2NvbG9yOiNmZmY7Zm9udC1zaXplOjFyZW07dHJhbnNpdGlvbjphbGwgLjNzIGVhc2V9aW5wdXQ6Zm9jdXMsc2VsZWN0OmZvY3Vze291dGxpbmU6MDtib3JkZXI6MnB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsLjUpfSNnZW5lcmF0ZS1idXR0b257YmFja2dyb3VuZDpncmV5O2NvbG9yOiNmZmY7Zm9udC1zaXplOjFyZW07cGFkZGluZzoxMHB4IDIwcHg7Ym9yZGVyLXJhZGl1czoxN3B4O2ZvbnQtd2VpZ2h0OjcwMDt0ZXh0LXNoYWRvdzowIDAgMjBweCBzaWx2ZXIsMCAwIDQwcHggc2lsdmVyLDAgMCA2MHB4IHNpbHZlcjtwb3NpdGlvbjpyZWxhdGl2ZTtib3JkZXI6MnB4IHNvbGlkIHNpbHZlcjtib3gtc2hhZG93OjAgMCAxMHB4IHNpbHZlcjt0cmFuc2l0aW9uOnRyYW5zZm9ybSAuM3MgZWFzZSxib3gtc2hhZG93IC4zcyBlYXNlLG9wYWNpdHkgLjNzIGVhc2U7Y3Vyc29yOnBvaW50ZXJ9I2dlbmVyYXRlLWJ1dHRvbjpob3Zlcntib3gtc2hhZG93OjAgMCAyMHB4IHNpbHZlcjtvcGFjaXR5Oi45fSNwYXJ0aWNsZXMtanN7cG9zaXRpb246Zml4ZWQ7d2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTt0b3A6MDtsZWZ0OjA7ei1pbmRleDotMX08L3N0eWxlPjxkaXYgaWQ9cGFydGljbGVzLWpzPjwvZGl2PjxkaXYgY2xhc3M9YmFja2dyb3VuZD48ZGl2IGNsYXNzPXN0YXJzPjwvZGl2PjxkaXYgY2xhc3M9Y29udGVudD48aDE+PHNwYW4+VmJvaSdzIEdhbWVzPC9zcGFuPiBMYXVuY2hlcjwvaDE+PGRpdiBjbGFzcz1kaXZpZGVyPjwvZGl2PjxsYWJlbCBmb3I9dGl0bGUtaW5wdXQ+UGFnZSBUaXRsZTwvbGFiZWw+IDxpbnB1dCBpZD10aXRsZS1pbnB1dCBwbGFjZWhvbGRlcj0nTmV3IFRhYid2YWx1ZT0nTmV3IFRhYic+IDxsYWJlbCBmb3I9cHJlLXNhdmVkLW9wdGlvbnM+UGFnZSBJY29uPC9sYWJlbD4gPHNlbGVjdCBpZD1wcmUtc2F2ZWQtb3B0aW9ucz48b3B0aW9uIHZhbHVlPScnc2VsZWN0ZWQ+Q2hvb3NlIGFuIE9wdGlvbjxvcHRpb24gdmFsdWU9c2Nob29sb2d5PlNjaG9vbG9neTxvcHRpb24gdmFsdWU9Y2xldmVyPkNsZXZlcjxvcHRpb24gdmFsdWU9Z29vZ2xlLWNsYXNzcm9vbT5Hb29nbGUgQ2xhc3Nyb29tPG9wdGlvbiB2YWx1ZT1nb29nbGVkb2NzPkdvb2dsZSBEb2NzPG9wdGlvbiB2YWx1ZT1nb29nbGVzbGlkZXM+R29vZ2xlIFNsaWRlczxvcHRpb24gdmFsdWU9Y2FudmFzPkNhbnZhczwvc2VsZWN0PiA8YnV0dG9uIGlkPWdlbmVyYXRlLWJ1dHRvbj48c3Bhbj5MYXVuY2ggVmJvaSdzIEdhbWVzPC9zcGFuPjwvYnV0dG9uPjwvZGl2PjwvZGl2PjxzY3JpcHQ+Y29uc3QgdXJsPSJodHRwczoiPT09d2luZG93LmxvY2F0aW9uLnByb3RvY29sP3dpbmRvdy5sb2NhdGlvbi5vcmlnaW4rIi9ob21lIjoiaHR0cHM6Ly92Ym9pLXMucGFnZXMuZGV2LyI7ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInByZS1zYXZlZC1vcHRpb25zIikuYWRkRXZlbnRMaXN0ZW5lcigiY2hhbmdlIixlPT57bGV0IG89ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInRpdGxlLWlucHV0Iik7ZS50YXJnZXQudmFsdWU/Imdvb2dsZS1jbGFzc3Jvb20iPT09ZS50YXJnZXQudmFsdWU/by52YWx1ZT0iSG9tZSI6ImNsZXZlciI9PT1lLnRhcmdldC52YWx1ZT9vLnZhbHVlPSJDbGV2ZXIgfCBQb3J0YWwiOiJzY2hvb2xvZ3kiPT09ZS50YXJnZXQudmFsdWU/by52YWx1ZT0iSG9tZSB8IFNjaG9vbG9neSI6Imdvb2dsZWRvY3MiPT09ZS50YXJnZXQudmFsdWU/by52YWx1ZT0iVW50aXRsZWQgZG9jdW1lbnQgLSBHb29nbGUgRG9jcyI6Imdvb2dsZXNsaWRlcyI9PT1lLnRhcmdldC52YWx1ZT9vLnZhbHVlPSJVbnRpdGxlZCBwcmVzZW50YXRpb24gLSBHb29nbGUgU2xpZGVzIjoiY2FudmFzIj09PWUudGFyZ2V0LnZhbHVlJiYoby52YWx1ZT0iRGFzaGJvYXJkIik6by52YWx1ZT0iTmV3IFRhYiJ9KSxkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZ2VuZXJhdGUtYnV0dG9uIikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCgpPT57bGV0IGU9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInRpdGxlLWlucHV0Iiksbz1lLnZhbHVlLHQ9IiIscz1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicHJlLXNhdmVkLW9wdGlvbnMiKS52YWx1ZTsic2Nob29sb2d5Ij09PXM/dD0iaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fib3Zlc2NvcmUvemtpdC9tYWluL3Jlc291cmNlcy9pY29ucy9zY2hvb2xvZ3kucG5nIjoiZ29vZ2xlLWNsYXNzcm9vbSI9PT1zP3Q9Imh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BYm92ZXNjb3JlL3praXQvbWFpbi9yZXNvdXJjZXMvaWNvbnMvY2xhc3Nyb29tLnBuZyI6ImNsZXZlciI9PT1zP3Q9Imh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BYm92ZXNjb3JlL3praXQvbWFpbi9yZXNvdXJjZXMvaWNvbnMvY2xldmVyLnBuZyI6Imdvb2dsZWRvY3MiPT09cz90PSJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQWJvdmVzY29yZS96a2l0L21haW4vcmVzb3VyY2VzL2ljb25zL2dvb2dsZWRvY3MucG5nIjoiZ29vZ2xlc2xpZGVzIj09PXM/dD0iaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fib3Zlc2NvcmUvemtpdC9tYWluL3Jlc291cmNlcy9pY29ucy9nb29nbGVzbGlkZXMucG5nIjoiY2FudmFzIj09PXMmJih0PSJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQWJvdmVzY29yZS96a2l0L21haW4vcmVzb3VyY2VzL2ljb25zL2NhbnZhcy5wbmciKTt2YXIgbj13aW5kb3cub3BlbigpO24uZG9jdW1lbnQudGl0bGU9bzt2YXIgbD1uLmRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoImxpbmsiKTtsLnJlbD0ic2hvcnRjdXQgaWNvbiIsbC5ocmVmPXQsbi5kb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKGwpLG4uZG9jdW1lbnQuYm9keS5zdHlsZS5tYXJnaW49IjAiLG4uZG9jdW1lbnQuYm9keS5zdHlsZS5oZWlnaHQ9IjEwMHZoIjt2YXIgYT1uLmRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoImlmcmFtZSIpO2Euc3R5bGUuYm9yZGVyPSJub25lIixhLnN0eWxlLndpZHRoPSIxMDAlIixhLnN0eWxlLmhlaWdodD0iMTAwJSIsYS5zdHlsZS5tYXJnaW49IjAiLGEuc3JjPXVybCxuLmRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSksd2luZG93LmxvY2F0aW9uLmhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIn0pOzwvc2NyaXB0PjxzY3JpcHQgc3JjPWh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL3BhcnRpY2xlcy5qcy8yLjAuMC9wYXJ0aWNsZXMubWluLmpzPjwvc2NyaXB0PjxzY3JpcHQ+Y29uc3QgcGFydGljbGVzQ29uZmlnPXtwYXJ0aWNsZXM6e251bWJlcjp7dmFsdWU6ODAsZGVuc2l0eTp7ZW5hYmxlOiEwLHZhbHVlX2FyZWE6ODAwfX0sY29sb3I6e3ZhbHVlOiIjZmZmZmZmIn0sc2hhcGU6e3R5cGU6ImNpcmNsZSIsc3Ryb2tlOnt3aWR0aDowLGNvbG9yOiIjMDAwMDAwIn0scG9seWdvbjp7bmJfc2lkZXM6NX19LG9wYWNpdHk6e3ZhbHVlOi41LHJhbmRvbTohMSxhbmltOntlbmFibGU6ITEsc3BlZWQ6MSxvcGFjaXR5X21pbjouMSxzeW5jOiExfX0sc2l6ZTp7dmFsdWU6MyxyYW5kb206ITAsYW5pbTp7ZW5hYmxlOiExLHNwZWVkOjQwLHNpemVfbWluOi4xLHN5bmM6ITF9fSxsaW5lX2xpbmtlZDp7ZW5hYmxlOiEwLGRpc3RhbmNlOjE1MCxjb2xvcjoiI2ZmZmZmZiIsb3BhY2l0eTouNCx3aWR0aDoxfSxtb3ZlOntlbmFibGU6ITAsc3BlZWQ6NixkaXJlY3Rpb246Im5vbmUiLHJhbmRvbTohMSxzdHJhaWdodDohMSxvdXRfbW9kZToib3V0Iixib3VuY2U6ITEsYXR0cmFjdDp7ZW5hYmxlOiExLHJvdGF0ZVg6NjAwLHJvdGF0ZVk6MTIwMH19fSxpbnRlcmFjdGl2aXR5OntkZXRlY3Rfb246ImNhbnZhcyIsZXZlbnRzOntvbmhvdmVyOntlbmFibGU6ITEsbW9kZToicmVwdWxzZSJ9LG9uY2xpY2s6e2VuYWJsZTohMSxtb2RlOiJyZXB1bHNlIn0scmVzaXplOiEwfSxtb2Rlczp7Z3JhYjp7ZGlzdGFuY2U6NDAwLGxpbmVfbGlua2VkOntvcGFjaXR5OjF9fSxidWJibGU6e2Rpc3RhbmNlOjQwMCxzaXplOjQwLGR1cmF0aW9uOjIsb3BhY2l0eTo4LHNwZWVkOjN9LHJlcHVsc2U6e2Rpc3RhbmNlOjIwMCxkdXJhdGlvbjouNH0scHVzaDp7cGFydGljbGVzX25iOjR9LHJlbW92ZTp7cGFydGljbGVzX25iOjJ9fX0scmV0aW5hX2RldGVjdDohMH07cGFydGljbGVzSlMoInBhcnRpY2xlcy1qcyIscGFydGljbGVzQ29uZmlnKTs8L3NjcmlwdD4=`)
+    // apparently some idiots thought this was a virus somehow, so i'm here to clear some misconception.
+    // this is the launcher, minified, base64 encoded. if you base64 DEcode this, itll end up back as an html file.
+    // re-beautifying this decoded launcher, you get: a normal launcher html.
+
+    // whoever you are should learn to read lmao
+
+    document.getElementById('download-launcher').addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const blob = new Blob([launcherBase64], { type: "text/html" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "math.html";
+      link.click();
+    });
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   <script>
     const particlesConfig = {
       particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
+        number: { value: 80, density: { enable: false, value_area: 800 } },
         color: { value: "#ffffff" },
         shape: {
           type: "circle",
           stroke: { width: 0, color: "#000000" },
           polygon: { nb_sides: 5 }
         },
-        opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+        opacity: { value: 0, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
         size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
-        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+        line_linked: { enable: false, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
         move: {
           enable: true,
           speed: 6,
@@ -301,7 +317,7 @@
         events: { onhover: { enable: false, mode: "repulse" }, onclick: { enable: false, mode: "repulse" }, resize: true },
         modes: {
           grab: { distance: 400, line_linked: { opacity: 1 } },
-          bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+          bubble: { distance: 400, size: 40, duration: 2, opacity: 0, speed: 3 },
           repulse: { distance: 200, duration: 0.4 },
           push: { particles_nb: 4 },
           remove: { particles_nb: 2 }
@@ -312,6 +328,7 @@
 
     particlesJS("particles-js", particlesConfig);
   </script>
-</body>
 
-</html>
+
+
+</body></html>

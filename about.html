@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Z-Kit</title>
+  <title>Vboi's Games</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
   <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
   <style>
+    /* CSS Here */
     @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap');
 
     .atkinson-hyperlegible-next-regular {
@@ -25,71 +26,73 @@
     }
 
     body {
+      /* Apply the new font class */
       font-family: "Atkinson Hyperlegible Next", sans-serif;
       background-color: #121212;
       color: #fff;
       margin: 0;
       padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      padding-left: 70px;
-      font-size: 14px;
     }
     .content {
-      flex: 1;
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5vw;
-      padding: 1.5vw;
-      max-width: min(90vw, 1000px);
-      margin: 0 auto;
-      width: 100%;
-      box-sizing: border-box;
+      justify-content: space-between;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
     }
     .content section {
-      flex: 1 1 min(400px, 90%);
-      min-width: 280px;
-      margin: 0;
+      flex: 1 1 48%;
+      margin-bottom: 40px;
       background: rgba(30, 30, 30, 0.2);
-      padding: 1.5vw;
+      padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(10px);
       display: flex;
       flex-direction: column;
     }
+    @media (max-width: 1080px) {
+      .content section {
+        flex: 1 1 100%;
+      }
+    }
     .content h2 {
-      font-size: clamp(1.5em, 4vw, 2.5em);
-      margin-bottom: 0.5em;
+      font-size: 2.5em;
+      margin-bottom: 10px;
       color: #ffffff;
     }
     .content p {
-      font-size: clamp(0.9em, 2vw, 1.2em);
+      font-size: 1.2em;
       line-height: 1.6;
       flex-grow: 1;
     }
     .partners-section {
-      width: 100%;
-      padding: 1.5vw;
-      background: rgba(255, 255, 255, 0);
-      margin-top: auto;
-      box-sizing: border-box;
       display: flex;
       overflow-x: auto;
+      padding: 20px 0;
+      background: rgba(255, 255, 255, 0);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 0 -20px;
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 50px);
+      left: 50px;
     }
     .partner-tile {
       flex: 0 0 auto;
-      width: clamp(100px, 15vw, 150px);
-      margin-right: 1.5vw;
+      width: 150px;
+      margin-right: 20px;
       text-align: center;
       transition: transform 0.3s;
     }
     .partner-tile img {
-      width: clamp(60px, 10vw, 100px);
-      height: clamp(60px, 10vw, 100px);
+      width: 100px;
+      height: 100px;
       border-radius: 10%;
-      margin-bottom: 0.5em;
+      margin-bottom: 10px;
     }
     .partner-tile:hover {
       transform: scale(1.05);
@@ -99,15 +102,16 @@
       text-decoration: none;
     }
     .floating-text-top {
-      padding: 0 1.5vw;
-      margin-bottom: 0.5em;
-      font-size: clamp(1.2em, 3vw, 2em);
+      position: absolute;
+      left: 70px;
+      bottom: 200px;
+      font-size: 2em;
       color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>
+  <div id="particles-js"></div> <!-- Particles.js container -->
   <div class="background">
     <div class="stars"></div>
   </div>
@@ -143,17 +147,25 @@
         <span class="material-symbols-outlined">info</span>
       </a>
     </div>
-    <div class="nav-item">
+    <!-- <div class="nav-item">
       <a href="settings.html">
         <span class="material-symbols-outlined">settings</span>
       </a>
-    </div>
+    </div> -->
   </div>
 
   <div class="content">
+    <section id="about">
+      <h2>About</h2>
+      <p>Vboi's Games is a fast and modern proxy website, that uses cloaking to remain permanently unblockable.
+        <br>Because Vboi's Games uses a launcher to start, it is fully unblockable if you download the launcher.
+        <br>It is also very easy to use, with a simple and clean UI.
+        <br>This site includes a web proxy, games, and apps.
+      </p>
+    </section>
     <section id="credits">
       <h2>Credits</h2>
-      <p>above - Developer of Z-Kit
+      <p>Vihaan - Developer of Vboi's Games
         <br>VRTZ - UI developer, thank you SO MUCH
         <br>3kh0 - HTML files for almost every game, and creator of ext remover
         <br>Blobby Boi - Developer of ExtPrint3r
@@ -164,15 +176,7 @@
     </section>
   </div>
 
-  <div class="floating-text-top"><b>Partners</b></div>
-  <section id="partners" class="partners-section">
-    <div class="partner-tile">
-      <a href="https://nebx.above.gay" target="_blank">
-        <img src="https://nebx.above.gay/assets/logo.png" alt="Nebula X">
-        <p>Nebula X</p>
-      </a>
-    </div>
-  </section>
+
 
   <script src="assets/js/particles.min.js"></script>
   <script>
@@ -180,6 +184,6 @@
       console.log('particles.js loaded');
     });
   </script>
-  <script src="assets/js/loadsettings.js"></script>
 </body>
 </html>
+
